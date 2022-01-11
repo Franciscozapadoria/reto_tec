@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="2e16274b512bf665695cb41c58edacd7e8ee78ca4c4d9fc059332972448e945a.html">Prueba Portal Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="94fba98941dcf99d1b5fec70813bccc74a37abc5238418b7e03cf6cb76e0a1d4.html">usuario ingresa a portal utest y realiza registro exitoso </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-01-2022 11:44</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Prueba Portal Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario no registrado<br />
+Quiero ingresar al portal y realizar registro<br />
+Para crear un nuevo usuario en el portal
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="724a015d3f9803fc362d377040ae6cffacabd9a00c4b77e9abcc37c49191311b.html">Crear Nuevo Usuario Exitoso
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="4afd9b12843943d67b2513f80f76094789cfea90a4673020a7767b5b1e1d8e9c.html">Reto Tecnico Utest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">usuario ingresa a portal utest y realiza registro exitoso
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>reto.utest.web.tasks.RegistrarDireccionNuevoUsuario.performAs(RegistrarDireccionNuevoUsuario.java:28)<br />reto.utest.web.stepsdefinitions.RetoTecnicoDefinitions.diligenciaFormularioRegistro(RetoTecnicoDefinitions.java:29)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //*[@id='city]' to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>reto.utest.web.tasks.RegistrarDireccionNuevoUsuario.performAs(RegistrarDireccionNuevoUsuario.java :28)<br />reto.utest.web.stepsdefinitions.RetoTecnicoDefinitions.diligenciaFormularioRegistro(RetoTecnicoDefinitions.java :29)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource13007243545514298579.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="57ae97550ef30cb37f4e9cfe158a0346c2244e6ec6fa0229fe6878c2cb0f7a5c.png" title=" Dado que francisco ingresa en el portal Utest" width="1366"/>
+                <img src="57ae97550ef30cb37f4e9cfe158a0346c2244e6ec6fa0229fe6878c2cb0f7a5c.png" title=" Francisco abrir url" width="1366"/>
+                <img src="57ae97550ef30cb37f4e9cfe158a0346c2244e6ec6fa0229fe6878c2cb0f7a5c.png" title=" francisco opens the Portal utest" width="1366"/>
+                <img src="57ae97550ef30cb37f4e9cfe158a0346c2244e6ec6fa0229fe6878c2cb0f7a5c.png" title=" Francisco abrir url (completed)" width="1366"/>
+                <img src="57ae97550ef30cb37f4e9cfe158a0346c2244e6ec6fa0229fe6878c2cb0f7a5c.png" title=" Dado que francisco ingresa en el portal Utest (completed)" width="1366"/>
+                <img src="f4f7e32f630423fd462e262fd063c87f60d4394074b4e9d4a5d1181049b49256.png" title=" Cuando diligencia formulario de registro" width="1366"/>
+                <img src="f4f7e32f630423fd462e262fd063c87f60d4394074b4e9d4a5d1181049b49256.png" title=" Registrar los datos del nuevo usuario" width="1366"/>
+                <img src="f4f7e32f630423fd462e262fd063c87f60d4394074b4e9d4a5d1181049b49256.png" title=" francisco clicks on boton join today" width="1366"/>
+                <img src="1646b3a9a36a3942e5f72a1af25bf131bf44dddc690f9f972c92a30432079bba.png" title=" francisco enters 'JUAN' into campo de texto para el nombre" width="1366"/>
+                <img src="13b68a292fc0a7d215f87c28ddcd9580c42866666128dae755fcaca2a4d88ae7.png" title=" francisco enters 'MARTINEZ' into campo de texto para el apellido" width="1366"/>
+                <img src="fc3cca3679153d276cd7dfcb0efb1c40aba1ea6a9d6e69197db7f6add1f4b8d1.png" title=" francisco enters 'zapita10@hotmail.com' into campo de texto del correo" width="1366"/>
+                <img src="7e46e19723ce0002f98881cc68338c668c6c9bcd81728bab9965217d7e868c4c.png" title=" francisco clicks on lista desplegable mes de cumpleano" width="1366"/>
+                <img src="0a5b22a1b007b0d98db03a39fa7c4997f7ccb86784b01ee2b7cc111e1e59eb90.png" title=" francisco clicks on lista desplegable dia de cumpleano" width="1366"/>
+                <img src="1b5a295560d578eb7de4b2c208ce0494efb69062932a60884ebad3669c6c6bdc.png" title=" francisco clicks on lista desplegable ano de cumpleano" width="1366"/>
+                <img src="aab813e23d68a901f19e9953e4f626e05e411fc93b23f19f6e70e3025291b975.png" title=" francisco clicks on boton para continuar al siguiente paso" width="1366"/>
+                <img src="aab813e23d68a901f19e9953e4f626e05e411fc93b23f19f6e70e3025291b975.png" title=" Francisco take screenshot" width="1366"/>
+                <img src="aab813e23d68a901f19e9953e4f626e05e411fc93b23f19f6e70e3025291b975.png" title=" Francisco take screenshot (completed)" width="1366"/>
+                <img src="aab813e23d68a901f19e9953e4f626e05e411fc93b23f19f6e70e3025291b975.png" title=" Registrar los datos del nuevo usuario (completed)" width="1366"/>
+                <img src="a57d75a77061804cf98af34ee10ddbd821e82cea3781802f32965b56ca4eb2b2.png" title=" Registrar la direccion del nuevo usuario" width="1366"/>
+                <img src="a57d75a77061804cf98af34ee10ddbd821e82cea3781802f32965b56ca4eb2b2.png" title=" francisco enters 'CARTAGENA' into campo de texto de la ciudad: <span class='failing-color'>FAILURE</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
