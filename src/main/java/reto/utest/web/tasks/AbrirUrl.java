@@ -9,9 +9,9 @@ import reto.utest.web.ui.PortalUtest;
 
 public class AbrirUrl implements Task {
 
-    private PortalUtest portalutest;
+   private PortalUtest portalutest;
 
-    public AbrirUrl () {}
+    //public AbrirUrl () {}
 
     public static AbrirUrl utest() {
         return Tasks.instrumented(AbrirUrl.class);
@@ -19,6 +19,7 @@ public class AbrirUrl implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
         actor.attemptsTo(Open.browserOn(portalutest));
     }
 }

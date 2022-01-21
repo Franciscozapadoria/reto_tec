@@ -20,7 +20,8 @@ public class RetoTecnicoDefinitions {
 
     @Dado("^que francisco ingresa en el portal Utest$")
     public void ingresaEnElPortalUtest() {
-        OnStage.theActorCalled("francisco").wasAbleTo(AbrirUrl.utest());
+
+        OnStage.theActorCalled("francisco").wasAbleTo(AbrirUrl.utest(),(JoinToday.onThePage()));
     }
 
     @Cuando("diligencia formulario de registro$")
