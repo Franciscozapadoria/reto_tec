@@ -33,7 +33,7 @@ public class RegistrarDatosDelNuevoUsuario implements Task {
                 Click.on(LST_DIA),
                 Click.on(LST_ANO),
                 Scroll.to(BTN_SEGUIR_PASO_2),
-                WaitUntil.the(BTN_SEGUIR_PASO_2,isVisible()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(BTN_SEGUIR_PASO_2,isVisible()).forNoMoreThan(5).seconds(),
                 Click.on(BTN_SEGUIR_PASO_2),
                 TakeScreenshot.asEvidence());
     }

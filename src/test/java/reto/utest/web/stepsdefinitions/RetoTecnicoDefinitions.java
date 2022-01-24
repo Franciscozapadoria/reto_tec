@@ -18,8 +18,8 @@ public class RetoTecnicoDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
 
-    @Dado("^que francisco ingresa en el portal Utest$")
-    public void ingresaEnElPortalUtest() {
+    @Dado("^que francisco ingresa en el portal Utest(.*)$")
+    public void ingresaEnElPortalUtest(String questions) {
 
         OnStage.theActorCalled("francisco").wasAbleTo(AbrirUrl.utest());
     }
@@ -34,7 +34,7 @@ public class RetoTecnicoDefinitions {
 
     @Entonces("^se crea como usuario nuevo$")
     public void creaUsuarioNuevo(){
-       //theActorInTheSpotlight().attemptsTo(UsuarioCreado.Correcto);
+       theActorInTheSpotlight().attemptsTo(UsuarioCreado.correcta());
 
     }
 }
