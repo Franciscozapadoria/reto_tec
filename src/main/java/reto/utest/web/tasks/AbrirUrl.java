@@ -11,7 +11,7 @@ public class AbrirUrl implements Task {
 
    private PortalUtest portalutest;
 
-    //public AbrirUrl () {}
+    public AbrirUrl () {}
 
     public static AbrirUrl utest() {
         return Tasks.instrumented(AbrirUrl.class);

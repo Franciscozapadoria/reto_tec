@@ -21,7 +21,7 @@ public class RetoTecnicoDefinitions {
     @Dado("^que francisco ingresa en el portal Utest$")
     public void ingresaEnElPortalUtest() {
 
-        OnStage.theActorCalled("francisco").wasAbleTo(AbrirUrl.utest(),(JoinToday.onThePage()));
+        OnStage.theActorCalled("francisco").wasAbleTo(AbrirUrl.utest());
     }
 
     @Cuando("diligencia formulario de registro$")
@@ -34,6 +34,7 @@ public class RetoTecnicoDefinitions {
 
     @Entonces("^se crea como usuario nuevo$")
     public void creaUsuarioNuevo(){
+       //theActorInTheSpotlight().attemptsTo(UsuarioCreado.Correcto);
 
     }
 }
